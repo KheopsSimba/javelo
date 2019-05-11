@@ -1,0 +1,56 @@
+html{
+    font-family:Arial, sans-serif;
+    background:burlywood;
+    color:#555;
+}
+input[type="text"], input[type="date"]{
+    background:#eee;
+    height:20px;
+    width:100px;
+}
+input[type="button"], input[type="submit"]{
+    height:30px;
+    padding:5px 10px;
+    background:#555;
+    color:#fff;
+    text-transform:uppercase;
+    position:relative;
+    left:20px;
+}
+input[type="button"]{
+    bottom:3px;
+}
+h1{
+    font-size:1.5em;
+    text-transform:uppercase;
+    padding-left:20px;
+}
+.clear{
+    clear:both;
+}
+p{
+    font-size:0.8em;
+    margin:0;
+}
+#list li{
+    padding-left:20px;
+    margin-bottom:10px;
+}
+label{
+    display:block;
+    width:220px;
+    height:40px;
+    line-height:40px;
+    text-align:right;
+}
+label input{
+    float:right;
+    width:140px!important;
+    margin-top:7px;
+    margin-left:5px;
+}
+.chartContainer{
+    height:200px;
+    width:600px;
+    margin:20px auto;
+}
