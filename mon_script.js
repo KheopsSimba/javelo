@@ -145,7 +145,7 @@ $(function(){
             //calculer le nombres de jours pour réaliser l'objectif
             var deltaObj = dateDiff(startDate, endDate).day;
             //combien réaliser par jour
-            var workPerDay = deltaObj/(parseInt(object_json.target)-parseInt(object_json.start));
+            var workPerDay = (parseInt(object_json.target)-parseInt(object_json.start))/deltaObj;
 
             //récupérer tous les progrès pour l'objectif
             var progresses = getProgressesForObj(object_id);
@@ -272,7 +272,7 @@ $(function(){
             }
 
             //combien réaliser par jour
-            var workPerDay = deltaObj/(parseInt(target)-parseInt(start));
+            var workPerDay = (parseInt(target)-parseInt(start))/deltaObj;
 
             if(localStorage.length == 0) {
                 var objectif = {'id': 1, 'start': start, 'target': target, 'start_date': start_date, 'end_date': end_date};
@@ -339,7 +339,7 @@ $(function(){
         var deltaStart = dateDiff(startDate, todayDate).day;
         var deltaObj = dateDiff(startDate, endDate).day;
         //combien réaliser par jour
-        var workPerDay = deltaObj/(object_json.target-object_json.start);
+        var workPerDay = (object_json.target-object_json.start)/deltaObj;
 
         if($(this).parent().find('.progress input').length){
             var field = $(this).parent().find('.progress input');
