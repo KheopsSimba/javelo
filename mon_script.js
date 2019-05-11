@@ -367,6 +367,7 @@ $(function(){
                         var progress_modified = {'id': p_id,'objective_id': progress.objective_id, 'value': field.val(), 'date': today, 'excess': excess};
                     }else{
                         //on mémorise un nouveau progrès
+                        name = 'p'+i;
                         var progress_modified = {'id': i,'objective_id': progress.objective_id, 'value': field.val(), 'date': today, 'excess': excess};
                     }
                 }else{
@@ -378,6 +379,7 @@ $(function(){
                         var progress_modified = {'id': p_id,'objective_id': progress.objective_id, 'value': field.val(), 'date': today};
                     }else{
                         //on mémorise un nouveau progrès
+                        name = 'p'+i;
                         var progress_modified = {'id': i,'objective_id': progress.objective_id, 'value': field.val(), 'date': today};
                     }
                 }
